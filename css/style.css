@@ -440,7 +440,6 @@ label{
 .sec-two .description {
     display: flex;
     justify-content: center;
-    /* gap: 24px; */
     flex-wrap: wrap;
 }
 .sec-two .description:last-child{
@@ -448,11 +447,9 @@ label{
 }
 .list-future{
     margin-bottom: 72px;
-    /* width: calc((100% - 3 * 24px) / 4); */
 }
 
 .sec-two h3{
-    /* width: 254px; */
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
@@ -461,7 +458,6 @@ label{
     text-align: center;
 }
 .sec-two p{
-    /* width: 254px; */
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
@@ -501,6 +497,7 @@ label{
 
 /* ================ sec-three ============== */
 
+
 .sec-three ul li .social-icons-item{
     position: relative;
     width: 40px;
@@ -521,8 +518,9 @@ label{
 .sec-three ul{
     display: flex;
     justify-content: center;
-    gap: 24px;
-
+    flex-wrap: wrap;
+    /* gap: 76px 24px; */
+    
 }
 
 .sec-three ul li {
@@ -538,15 +536,15 @@ label{
     left: 50%;
     transform: translate(-50%, -50%);
     fill:#f4f4fd;
-
- }
+    
+}
 
 .title-team{
     margin-bottom: 72px;
 }
 
 .team-list{
-border-radius: 0px 0px 4px 4px
+    border-radius: 0px 0px 4px 4px;
 }
 
 .member{
@@ -557,18 +555,25 @@ border-radius: 0px 0px 4px 4px
 .member-title{
     text-align: center;
     margin-bottom: 8px;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: 0.02em;
 }
 .parag{
     text-align: center;
     margin-bottom: 8px;
 
 }
+
 .sec-three h2{
     text-align: center;
     font-size: 36px;
     line-height: 0.9;
     color: #2E2F42;
 }
+
+/* ============ sec-four ============ */
 
 .sec-four ul {
     display: flex;
@@ -823,7 +828,17 @@ section{
     line-height: 1.5;
     color: rgba(67, 68, 85, 1);
 }
+.sec-three ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* gap: 64px 24px; */
+
 }
+
+}
+
+
 
 
 /* ============== 1440 ==================*/
@@ -852,4 +867,11 @@ section{
             border-radius: 4px;
             background-color: rgba(244, 244, 253, 1);
         }
+         .sec-three ul {
+             display: flex;
+             justify-content: center;
+             flex-wrap: wrap;
+             gap: 24px;
+    
+         }
 }
