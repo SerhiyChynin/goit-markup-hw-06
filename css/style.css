@@ -498,6 +498,9 @@ label{
 .social-link:hover, .social-link:focus {
     background-color: #404bbf;
 }
+
+/* ================ sec-three ============== */
+
 .sec-three ul li .social-icons-item{
     position: relative;
     width: 40px;
@@ -785,6 +788,7 @@ section{
 @media screen and (min-width: 320px) and (max-width:767px) {
     .container{
         max-width:320px;
+        padding: 96px 0;
     }
     
 }
@@ -794,8 +798,7 @@ section{
     .container{
         max-width: 768px;
         width: 100%;
-        padding: 0 16px;
-        margin: 0;
+        padding: 96px 16px;
     }
     .sec-two .description {
         justify-content: start;
@@ -826,8 +829,11 @@ section{
 /* ============== 1440 ==================*/
 
 @media screen and (min-width: 1440px){
-    .sec-two .description {
+    .container{
         max-width: 1440px;
+        padding: 120px 0;
+    }
+    .sec-two .description {
         gap: 24px;
     }
 
