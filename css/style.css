@@ -54,7 +54,7 @@ section {
 }
 .container{
     width: 1158px;
-    max-width: 100%;
+    max-width: 320px;
     margin: 0 auto;
     padding: 0 16px 0 16px;
 }
@@ -156,7 +156,8 @@ address {
 .sec-one {
     position: relative;
     background-color: #2E2F42;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-bg.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+     rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -165,9 +166,15 @@ address {
     gap: 48px;
     /* padding: 188px 0 188px 0; */
     padding: 72px 0 72px 0;
-    max-width: 1440px;
-    height: 432px;
+    max-width: 320px;
 }
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx){
+.sec-one {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+     rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-mobile-2x.jpg);
+}}
 .sec-one .container{
     max-width: 200px;
     /* background-color: #fff; */
@@ -810,12 +817,12 @@ footer p{
 }
 
 /* =================== 320 ================ */
-@media screen and (min-width: 320px) and (max-width:767px) {
+/* @media screen and (min-width: 320px) and (max-width:767px) {
     .container{
         max-width:320px;
     }
     
-}
+} */
 /* =================== 768 ================= */
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
@@ -866,7 +873,8 @@ footer p{
 .sec-one {
     position: relative;
     background-color: #2E2F42;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-bg.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+     rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-tablet.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -877,6 +885,14 @@ footer p{
     max-width: 768px;
     height: 436px;
 }
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .sec-one {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-tablet-2x.jpg);
+    }}
 .sec-one .container {
     max-width: 100%;
     /* background-color: #fff; */
@@ -961,6 +977,13 @@ section {
     /* padding: 72px 0 72px 0; */
     max-width: 1440px;
     min-height: 600px;
+}
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .sec-one {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-2x.jpg);
+    }
 }
 .sec-one .container {
     max-width: 100%;
