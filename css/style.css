@@ -463,6 +463,10 @@ label{
 .list-future{
     margin-bottom: 72px;
 }
+.list-future:last-child{
+    margin-bottom: 0;
+}
+
 
 .sec-two h3{
     font-weight: 700;
@@ -859,6 +863,34 @@ footer p{
     max-width: 356px;
     /* width: calc((100% - 24px) / 2); */
 }
+.sec-one {
+    position: relative;
+    background-color: #2E2F42;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    margin: 0 auto;
+    gap: 48px;
+    padding: 112px 0 112px 0;
+    max-width: 768px;
+    height: 436px;
+}
+.sec-one .container {
+    max-width: 100%;
+    /* background-color: #fff; */
+}
+.title {
+    max-width: 496px;
+    margin: 0 auto;
+    margin-bottom: 36px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+}
 }
 
 
@@ -877,6 +909,7 @@ footer p{
 
 .list-future {
     width: calc((100% - 3 * 24px) / 4);
+    margin-bottom: 0;
 }
 .device {
     max-width: 360px;
@@ -913,5 +946,34 @@ footer p{
 }
 section {
  padding: 120px 0;
+}
+.sec-one {
+    position: relative;
+    background-color: #2E2F42;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    margin: 0 auto;
+    gap: 48px;
+    padding: 188px 0 188px 0;
+    /* padding: 72px 0 72px 0; */
+    max-width: 1440px;
+    min-height: 600px;
+}
+.sec-one .container {
+    max-width: 100%;
+    /* background-color: #fff; */
+}
+.title {
+    max-width: 496px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: #ffffff;
 }
 }
