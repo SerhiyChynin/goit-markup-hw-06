@@ -13,8 +13,8 @@
     <title>WebStudio</title>
 </head>
 <body>
-    <!-- <header class="header">
-        <div class="container header">
+    <header class="header">
+        <div class="container header" style="display: none;">
             <nav class="nav">
                 <a class="logo" href="/"><span class="blue_color">Web</span>Studio</a>
                 <ul class="menu-list">
@@ -29,7 +29,7 @@
                     </li>
                 </ul>
             </nav>
-        <address>
+        <address class="address-header">
         <ul class="info">
             <li>
                 <a href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -39,8 +39,71 @@
             </li>
         </ul>
         </address>
+        <button type="button" class="burger-btn-open">
+            <svg class="burger-svg" width="17" height="16">
+                <use href="./images/icons.svg#icon-Group1"></use>
+            </svg>
+        </button>
         </div>
-    </header> -->
+        <div class="mob-menu">
+            <button type="button" class="modal-btn">
+                <svg class="modal-btn-icon" width="8" height="8">
+                    <use href="./images/icons.svg#icon-Vector51"></use>
+                </svg>
+            </button>
+            <ul class="mob-menu-list">
+                <li class="mob-list-menu">
+                    <a href="/" class="link">Studio</a>
+                </li>
+                <li class="mob-list-menu">
+                    <a href="#portfolio" class="link">Portfolio</a>
+                </li>
+                <li class="mob-list-menu">
+                    <a href="/" class="link">Contacts</a>
+                </li>
+            </ul>
+            <address class="mob-address">
+                <ul class="mob-info">
+                    <li class="mob-list-info">
+                        <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li class="mob-list-info">
+                        <a href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a>
+                    </li>
+                </ul>
+            </address>
+            <ul class="mob-social-icons-list">
+                <li class="social-icons-item">
+                    <a href="" class="social-link">
+                        <svg class="social-icons-member" width="24" height="24">
+                            <use href="./images/icons.svg#icon-instagram-2"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-icons-item">
+                    <a href="" class="social-link">
+                        <svg class="social-icons-member" width="24" height="24">
+                            <use href="./images/icons.svg#icon-twitter-1"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-icons-item">
+                    <a href="" class="social-link">
+                        <svg class="social-icons-member" width="24" height="24">
+                            <use href="./images/icons.svg#icon-facebook-1"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-icons-item">
+                    <a href="" class="social-link">
+                        <svg class="social-icons-member" width="24" height="24">
+                            <use href="./images/icons.svg#icon-linkedin-1"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
     <main class="common">
         <section class="sec-one">
             <div class="container">
