@@ -211,6 +211,9 @@ gap: 40px;
     display: flex;
     gap: 40px;
 }
+.modal{
+    max-width: 288px;
+}
 
 .nav li a {
     font-family: "Roboto", sans-serif;
@@ -351,7 +354,7 @@ address ul  {
     0 1px 2px 0 rgba(0, 0, 0, 0.2);
     border: none;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 72px 24px 24px 24px;
+    padding: 72px 16px 24px 16px;
 }
 .modal-field {
     margin-bottom: 8px;
@@ -456,6 +459,7 @@ label{
 .user-name{
     width: 100%;
     height: 40px;
+    /* width: 256px; */
     border-radius: 4px;
     background-color: transparent;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -737,7 +741,6 @@ label{
 .device-wrap{    
     position: relative;    
     overflow: hidden;
-
 }
 .device:hover .cover-text{
     transform: translateY(0);
@@ -761,6 +764,12 @@ label{
 }
 .device{
     max-width: 288px;
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+.device:nth-child(1){
+box-shadow: 0 1px 2px 0 rgba(46, 47, 66, 0.08),
+0 1px 1px 0 rgba(46, 47, 66, 0.16),
+0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .api-desc{
     padding: 32px 16px;
@@ -968,6 +977,10 @@ flex-direction: column;
     max-width: 768px;
     min-height: 72px;
 }
+.modal {
+    max-width: 408px;
+    padding: 72px 25px 24px 23px;
+}
 
 .nav,
 .nav ul {
@@ -1014,7 +1027,12 @@ flex-direction: column;
 }
 .device {
     max-width: 356px;
-    /* width: calc((100% - 24px) / 2); */
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+.device:nth-child(5){
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .sec-one {
     position: relative;
@@ -1132,6 +1150,7 @@ address ul {
     line-height: 1.11;
     letter-spacing: 0.02em;
     color: #ffffff;
+    text-transform: none;
 }
 
 }
@@ -1156,6 +1175,10 @@ address ul {
 
 .burger-btn-open{
     display: none;
+}
+.modal {
+    max-width: 408px;
+    padding: 72px 24px 24px 24px;
 }
 address ul {
     display: flex;
@@ -1295,5 +1318,6 @@ section {
     line-height: 1.11;
     letter-spacing: 0.02em;
     color: #ffffff;
+    text-transform: none;
 }
 }
