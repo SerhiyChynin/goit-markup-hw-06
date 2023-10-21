@@ -128,7 +128,6 @@ section {
 .mob-menu{
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -141,7 +140,7 @@ section {
     overflow: auto;
     opacity: 0;
     visibility: hidden;
-    pointer-events: none;
+    pointer-events: auto;
 }
 
 .modal-btn-close {
@@ -783,7 +782,9 @@ label{
 
 footer{
     background-color: #2E2F42;
-    padding-top: 101px;
+    padding-top: 98px;
+    padding-bottom: 96px;
+
 }
 footer a{
     text-transform: uppercase;
@@ -791,40 +792,58 @@ footer a{
     color: #F4F4FD;
 }
 footer p{
-    width: 264px;
+    /* width: 264px; */
+    width: 288px;
     color: #F4F4FD;
 }
 
+.container-footer{
+display: flex;
+flex-direction: column;
+/* height: 664px; */
+/* margin-bottom: 96px; */
+}
 .base{
-    padding: 100px 0 100px 0;
+    margin: 0 auto;
+    max-width: 320px;
 }
 .logo-base{
-    display: inline-block;
-    margin-bottom: 16px;
+    display: block;
+    text-align: center;
+    margin-bottom: 17px;
 }
 .base-p{
     max-width: 264px;
 }
 .social-icons-footer{
-    width: 208px;
-    margin-right: 80px;
+    /* width: 208px; */
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 72px;
+    margin-top: 72px;
+    /* margin-right: 80px; */
 }
 .container-footer{
     display: flex;
     align-items: first baseline;
 }
 .footer-social{
+    display: flex;
+    justify-content: center;
+    text-align: center;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color:#ffffff;
     font-family: "Roboto", sans-serif;
+    text-align: center;
     margin-bottom: 16px;
 }
 .social-icons-list{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 16px;
 }
 
@@ -859,9 +878,15 @@ footer p{
    transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .m-right-footer{
-    margin-right: 120px;
+    /* margin-right: 120px; */
+    /* margin-bottom: 72px; */
 }
 
+.subscribe-form{
+    /* margin-top: auto; */
+    display: flex;
+    flex-direction: column;
+}
 
 .sub-email{    
     width: 264px;
@@ -877,16 +902,20 @@ footer p{
     letter-spacing: 0.04em;
     line-height: 1.5;
     padding-left: 16px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15))
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    min-width: 288px
 }
 .sub-email::placeholder{
     color:rgba(255, 255, 255, 1);
 }
+
 .sub-flex{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap:24px;
+    /* gap:24px; */
+    gap:16px;
 }
 .sub-icon{
     margin-left: 16px;
@@ -1080,6 +1109,7 @@ address ul {
 
 @media screen and (min-width: 1158px){
 .container{
+    width: 1158px;
     max-width: 1158px;
     padding: 0;
 }
