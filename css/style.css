@@ -958,7 +958,8 @@ flex-direction: column;
 
 
 
-/* ============================== 768 ================================ */
+/* ======================================== 768 ==================================== */
+
 
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
@@ -1147,7 +1148,6 @@ address ul {
     }}
 .sec-one .container {
     max-width: 100%;
-    /* background-color: #fff; */
 }
 .title {
     max-width: 496px;
@@ -1166,7 +1166,11 @@ address ul {
 
 
 
-/* ============== 1440 ==================*/
+
+/* ================================================ 1440 =======================================*/
+
+
+
 
 @media screen and (min-width: 1158px){
 .container{
@@ -1257,7 +1261,6 @@ section {
     margin: 0 auto;
     gap: 48px;
     padding: 188px 0 188px 0;
-    /* padding: 72px 0 72px 0; */
     max-width: 1440px;
     min-height: 600px;
 }
@@ -1267,7 +1270,6 @@ section {
     justify-content: start;
     font-size: 20px;
     font-weight: 500;
-
 }
 .sec-two p {
     font-weight: 400;
@@ -1277,7 +1279,6 @@ section {
     padding: 100px 0 100px 0;
 }
 .container-footer{
-
     flex-direction: row;
 }
 .footer-desc{
@@ -1312,6 +1313,9 @@ section {
     display: flex;
     flex-direction: row;
     gap: 24px;
+}
+.footer-desc{
+    margin-bottom: 0;
 }
 
 @media (min-device-pixel-ratio: 2),
