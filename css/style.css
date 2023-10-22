@@ -24,11 +24,9 @@ h6 {
     margin-top: 0;
     margin-bottom: 0;
 }
-
 p {
     margin: 0;
 }
-
 ul {
     margin-top: 0;
     margin-bottom: 0;
@@ -41,7 +39,12 @@ img {
 }
 
 
-/* header */
+
+
+/*=========================================== header ================================== */
+
+
+
 header {
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -74,8 +77,6 @@ section {
     padding: 17.5px 0;
 
 }
-
-
 .header {
     display: flex;
     text-align: center;
@@ -86,7 +87,6 @@ section {
     display: flex;
     align-items: center;
     gap: 40px;
-    /* padding: 24px 0 24px 0; */
     margin: 0;
 }
 .menu-list li:nth-child(1){
@@ -108,7 +108,6 @@ section {
     background-color: #404BBF;
     border-radius: 2px;
 }
-
 .nav,.nav ul {
     display: flex;
     align-items: center;
@@ -117,7 +116,6 @@ section {
 .nav ul{
     display: none;
 }
-
 .burger-btn-open{
     height: 24px;
     padding: 21px 0;
@@ -125,9 +123,13 @@ section {
     border: none;
 }
 
+
+
+/* ================================= mob-menu ================================= */
+
+
+
 .mob-menu{
-    display: flex;
-    flex-direction: column;
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -135,14 +137,20 @@ section {
     left: 0;
     z-index: 1;
     background-color: #fff;
-    padding: 72px 24px 40px 16px;
     text-align: left;
     overflow: auto;
     opacity: 0;
     visibility: hidden;
     pointer-events: auto;
 }
-
+.mob-container{
+    display: flex;
+    padding: 72px 24px 40px 16px;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
 .modal-btn-close {
     background-color: transparent;
     position: absolute;
@@ -176,7 +184,9 @@ gap: 40px;
     line-height: 1.1;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    font-family: "Roboto", sans-serif;
 }
+
 .mob-list-menu:nth-child(1) a{
     color:#404BBF;
 }
@@ -202,11 +212,12 @@ gap: 40px;
     color:#434455;
     font-size: 20px;
     line-height: 1.2;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
 }
 .mob-list-info:nth-child(1) a{
     color:#4D5AE5;
 }
-
 .mob-social-icons-list{
     display: flex;
     gap: 40px;
@@ -214,7 +225,9 @@ gap: 40px;
 .modal{
     max-width: 288px;
 }
-
+.logo-base{
+    font-weight: 700;
+}
 .nav li a {
     font-family: "Roboto", sans-serif;
     padding: 24px 0 24px 0;
@@ -222,7 +235,6 @@ gap: 40px;
     font-weight: 500;
     color: #2E2F42;
 }
-
 .nav li a:hover{
     color: #404BBF;
 }
@@ -259,7 +271,11 @@ address ul  {
     color: #4D5AE5;
 }
 
-/* main */
+
+
+/*============================================== main ==================================== */
+
+
 
 .sec-one {
     position: relative;
@@ -272,7 +288,6 @@ address ul  {
     text-align: center;
     margin: 0 auto;
     gap: 48px;
-    /* padding: 188px 0 188px 0; */
     padding: 72px 0 72px 0;
     max-width: 320px;
 }
@@ -283,17 +298,13 @@ address ul  {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
      rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-mobile-2x.jpg);
 }}
-
 .sec-one .container{
     max-width: 200px;
-    /* background-color: #fff; */
 }
 .title{
     margin: 0 auto;
-    /* margin-bottom: 48px; */
     margin-bottom: 72px;
     font-weight: 700;
-    /* font-size: 56px; */
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
@@ -318,7 +329,13 @@ address ul  {
 .btn:hover{
     background-color: #404BBF;
 }
-/*=================== form ================== */
+
+
+
+/*================================= form ================================== */
+
+
+
 .backdrop{
     width: 100%;
     height: 100%;
@@ -332,7 +349,6 @@ address ul  {
     visibility: hidden;
     pointer-events: none;
 }
-
 .is-open{
     opacity: 1;
     visibility: visible;
@@ -362,7 +378,6 @@ address ul  {
 .modal-field:nth-child(4){
 margin-bottom: 16px;
 }
-
 .modal-btn{
     background-color: transparent;
     position: absolute;
@@ -382,7 +397,6 @@ margin-bottom: 16px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
      border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .modal-btn-icon {
     padding: 0;
     border-radius: 50%;
@@ -396,15 +410,12 @@ margin-bottom: 16px;
     background-color: #404bbf;
     border: none;
 }
-
 .modal-btn:hover .modal-btn-icon{
     fill: #ffffff;
 }
 .modal-btn:focus .modal-btn-icon{
     fill: #ffffff;
 }
-
-
 .user-label{
     display: block;
     line-height: 1.17;
@@ -450,7 +461,6 @@ label{
     letter-spacing: 0.04em;
     line-height: 1.2;
 }
-
 .btn-send{
     margin: 24px auto 0;
     width: 169px;
@@ -459,7 +469,6 @@ label{
 .user-name{
     width: 100%;
     height: 40px;
-    /* width: 256px; */
     border-radius: 4px;
     background-color: transparent;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -468,15 +477,12 @@ label{
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .user-name:focus{
     border-color: #4D5AE5;
 }
 .user-name:focus-within + .modal-icon{
     fill: rgba(77, 90, 229, 1);
 }
-
-
 .user-com{
     width: 100%;
     height: 120px;
@@ -496,8 +502,6 @@ label{
 .user-com:focus{
     border-color: rgba(77, 90, 229, 1);
 }
-
-
 .checkbox-agree {
     font-weight: 400;
     font-size: 12px;
@@ -528,20 +532,13 @@ label{
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         border 250ms cubic-bezier(0.4, 0, 0.2, 1),
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
-
-
 
 .btn-send{
     font-family: "Roboto", sans-serif;
     line-height: 1.5;
     letter-spacing: 0.04em;
 }
-
-
-
-
 .modal-check:checked + .checkbox-agree .modal-check-text{
     background-color: rgba(64, 75, 191, 1);
     border: 1px solid rgba(64, 75, 191, 1);
@@ -557,8 +554,6 @@ label{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    
-
 }
 .checkbox{
     margin-top: 16px;
@@ -568,7 +563,11 @@ label{
     stroke: transparent;
 }
 
-/* ============= sec-two ============== */
+
+
+/* =============================== sec-two ================================== */
+
+
 
 .sec-two .description {
     display: flex;
@@ -584,8 +583,6 @@ label{
 .list-future:last-child{
     margin-bottom: 0;
 }
-
-
 .sec-two h3{
     font-weight: 700;
     font-size: 36px;
@@ -632,7 +629,10 @@ label{
     background-color: #404bbf;
 }
 
-/* ================ sec-three ============== */
+
+
+/* ================================= sec-three ================================= */
+
 
 
 .sec-three ul li .social-icons-item{
@@ -647,8 +647,6 @@ label{
     transform: translate(-50%, -50%);
 }
 
-
-
 .sec-three{
     background-color: #F4F4FD;
 }
@@ -656,8 +654,7 @@ label{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 76px 24px;
-    
+    gap: 76px 24px;   
 }
 
 .sec-three ul li {
@@ -673,7 +670,6 @@ label{
     left: 50%;
     transform: translate(-50%, -50%);
     fill:#f4f4fd;
-    
 }
 
 .title-team{
@@ -710,7 +706,11 @@ label{
     color: #2E2F42;
 }
 
-/* ============ sec-four ============ */
+
+
+/* ================================== sec-four===================== ============ */
+
+
 
 .sec-four ul {
     display: flex;
@@ -787,7 +787,10 @@ box-shadow: 0 1px 2px 0 rgba(46, 47, 66, 0.08),
 }
 
 
-/* ===================== footer =================== */
+
+/* ====================================== footer ================================ */
+
+
 
 footer{
     background-color: #2E2F42;
@@ -799,10 +802,12 @@ footer a{
     text-transform: uppercase;
     font-size: 18px;
     color: #F4F4FD;
+    font-weight: 500;
 }
+
+
+
 footer p{
-    /* width: 264px; */
-    width: 288px;
     color: #F4F4FD;
 }
 
@@ -812,21 +817,20 @@ flex-direction: column;
 }
 .base{
     margin: 0 auto;
-    max-width: 320px;
 }
 .logo-base{
     display: block;
     text-align: center;
     margin-bottom: 17px;
 }
-.base-p{
-    max-width: 264px;
-}
+
 .social-icons-footer{
     justify-content: center;
     margin: 0 auto;
-    margin-bottom: 72px;
     margin-top: 72px;
+}
+.footer-desc{
+    margin-bottom: 72px;
 }
 .container-footer{
     display: flex;
@@ -882,13 +886,8 @@ flex-direction: column;
 .social-icons-list li:nth-child(1) a{
    transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* .m-right-footer{
-    margin-right: 120px;
-    margin-bottom: 72px;
-} */
 
 .subscribe-form{
-    /* margin-top: auto; */
     display: flex;
     flex-direction: column;
 }
@@ -919,7 +918,6 @@ flex-direction: column;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* gap:24px; */
     gap:16px;
 }
 .sub-icon{
@@ -958,14 +956,10 @@ flex-direction: column;
     border: 0;
 }
 
-/* =================== 320 ================ */
-/* @media screen and (min-width: 320px) and (max-width:767px) {
-    .container{
-        max-width:320px;
-    }
-    
-} */
-/* =================== 768 ================= */
+
+
+/* ============================== 768 ================================ */
+
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
 .container{
@@ -994,6 +988,11 @@ flex-direction: column;
     justify-content: start;
     column-gap: 24px;
 }
+.header a,
+footer a {
+    font-family: "Raleway", sans-serif;
+}
+
 
 .list-future {
     width: calc((100% - 24px) / 2);
@@ -1093,7 +1092,6 @@ address ul {
 }
 
 .base{
-    max-width: 768px;
     padding: 96px 164px 96px 108px;
 }
 .footer-desc{
@@ -1102,9 +1100,14 @@ address ul {
     align-items: first baseline;
     margin-bottom: 72px;
 }
+
 .logo-base{
     text-align: left;
 }
+.m-right-footer{
+    max-width: 264px;
+}
+
 .container-footer{
     padding: 0;
 }
@@ -1113,6 +1116,7 @@ address ul {
 }
 .social-icons-footer{
     margin: 0;
+    
     margin-left: 24px;
     max-width: 208px;
     text-align: start;
@@ -1128,6 +1132,10 @@ address ul {
     display: flex;
     flex-direction: row;
     gap: 24px;
+}
+
+.container.container-footer{
+    max-width: 584px;
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -1172,6 +1180,10 @@ address ul {
     margin: 0 auto;
     
 }
+.header a,
+footer a {
+    font-family: "Raleway", sans-serif;
+}
 
 .burger-btn-open{
     display: none;
@@ -1182,6 +1194,9 @@ address ul {
 }
 address ul {
     display: flex;
+}
+.container.container-footer {
+    max-width: 1158px;
 }
 .nav,
 .nav ul {
@@ -1269,6 +1284,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: first baseline;
+    margin-right: 80px;
 }
 .m-right-footer{
     margin-right: 120px;
