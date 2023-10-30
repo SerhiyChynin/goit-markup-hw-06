@@ -273,8 +273,7 @@ address ul  {
 
 
 /*============================================== main ==================================== */
-
-
+/* =========================================== sec-one =================================== */
 
 .sec-one {
     position: relative;
@@ -288,7 +287,7 @@ address ul  {
     margin: 0 auto;
     gap: 48px;
     padding: 72px 0 72px 0;
-    max-width: 320px;
+    /* max-width: 320px; */
 }
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
